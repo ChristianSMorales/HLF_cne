@@ -1,0 +1,7 @@
+FROM ipfs/go-ipfs:latest
+
+# Exponer puertos
+EXPOSE 4001 5001 8081
+
+# Comando para iniciar el daemon de IPFS
+CMD ["ipfs", "daemon"]

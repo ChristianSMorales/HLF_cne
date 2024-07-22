@@ -1,0 +1,48 @@
+{
+	"name": "test-network",
+	"version": "1.0.0",
+	"client": {
+		"tlsEnable": true,
+		"adminCredential": {
+			"id": "exploreradmin",
+			"password": "exploreradminpw"
+		},
+		"enableAuthentication": true,
+		"organization": "CNEMSP",
+		"connection": {
+			"timeout": {
+				"peer": {
+					"endorser": "300"
+				},
+				"orderer": "300"
+			}
+		}
+	},
+	"channels": {
+		"canal": {
+			"peers": {
+				"peer0.cne.com": {}
+			}
+		}
+	},
+	"organizations": {
+		"CNEMSP": {
+			"mspid": "CNEMSP",
+			"adminPrivateKey": {
+				"path": "/tmp/crypto/peerOrganizations/cne.com/users/Admin@cne.com/msp/keystore/107152e7719580ff2ea068a2d18a698d656419ce562f8d19eff4531de0bfaf43_sk"
+			},
+			"peers": ["peer0.cne.com"],
+			"signedCert": {
+				"path": "/tmp/crypto/peerOrganizations/cne.com/users/Admin@cne.com/msp/signcerts/cert.pem"
+			}
+		}
+	},
+	"peers": {
+		"peer0.cne.com": {
+			"tlsCACerts": {
+				"path": "/tmp/crypto/peerOrganizations/cne.com/peers/peer0.cne.com/tls/ca.crt"
+			},
+			"url": "grpcs://peer0.cne.com:7051"
+		}
+	}
+}
