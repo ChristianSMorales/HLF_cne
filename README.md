@@ -6,6 +6,12 @@
 
 `sudo sh installer.sh`
 
+# Consideraciones
+
+Verificar que los ficheros init.sh envs.sh network.sh dentro del directorio /cne-network tengan permisos de ejecución, caso contrario darselos
+
+`chmod +x init.sh envs.sh network.sh`
+
 # Pasos para levantar la infraestructura
 
 1.- Verificar que no exista algun contenedor levantado
