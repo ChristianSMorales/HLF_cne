@@ -10,7 +10,11 @@
 
 Verificar que los ficheros init.sh envs.sh network.sh dentro del directorio /cne-network tengan permisos de ejecución, caso contrario darselos
 
-`chmod +x init.sh envs.sh network.sh`
+`chmod +x init.sh envs.sh network.sh `
+
+Adicional, la carpeta scripts/ debe tener permisos de ejecución
+
+`sudo chmod +x -R scripts/`
 
 # Pasos para levantar la infraestructura
 
