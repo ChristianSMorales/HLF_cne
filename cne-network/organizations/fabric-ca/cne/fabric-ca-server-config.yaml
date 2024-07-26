@@ -80,7 +80,7 @@ tls:
 #############################################################################
 ca:
   # Name of this CA
-  name: OeaCA
+  name: CNECA
   # Key file (is only used to import a private key into BCCSP)
   keyfile:
   # Certificate file (default: ca-cert.pem)
@@ -301,16 +301,16 @@ signing:
 #     CA certificates though it can still issue end entity certificates.
 ###########################################################################
 csr:
-   cn: ca.oea.com
+   cn: ca.cne.com
    names:
-      - C: US
-        ST: "District of Columbia"
-        L: "Washington"
-        O: oea.com
+      - C: EC
+        ST: "Pichincha"
+        L: "Quito"
+        O: cne.com
         OU:
    hosts:
      - localhost
-     - oea.com
+     - cne.com
    ca:
       expiry: 131400h
       pathlength: 1
