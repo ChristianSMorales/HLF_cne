@@ -99,3 +99,18 @@ Commands:
 -> verresultados Muestra la tabla de resultados actual
 
 \*******************************
+
+
+# Pasos para bajar la infraestructura
+
+1.- En el directorio cne-network, ejecutamos 
+
+`sudo ./network.sh down`
+
+2./ En el direcotio explorer/ ejecutamos
+
+`sudo sh decompose.sh`
+
+3./ En el directorio  asset-transfer-basic/applications-gateway-go/artifacts/ y ejecutar
+
+`sudo sh decomposeIPFS.sh`
