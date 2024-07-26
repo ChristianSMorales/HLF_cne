@@ -1,9 +1,0 @@
-/channel-artifacts/*.tx
-/channel-artifacts/*.block
-/ledgers
-/ledgers-backup
-/channel-artifacts/*.json
-/org3-artifacts/crypto-config/*
-system-genesis-block/*
-*.tar.gz
-log.txt
