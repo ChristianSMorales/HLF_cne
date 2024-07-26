@@ -1,5 +1,11 @@
 # HLF_cne
 
+# Instalar prerrequisitos
+
+1.- Ingresar al directorio Prerequisitos/ y ejecutar installer.sh
+
+`sudo sh installer.sh`
+
 # Pasos para levantar la infraestructura
 
 1.- Verificar que no exista algun contenedor levantado
