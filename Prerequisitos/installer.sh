@@ -29,6 +29,7 @@ sudo rm -rf /usr/local/go
 sudo tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
 sudo echo -e "\nexport GOROOT=/usr/local/go\nexport GOPATH=\$HOME/go\nexport PATH=\$GOPATH/bin:\$GOROOT/bin:\$PATH" >> ~/.profile
 source ~/.profile
+sudo rm go1.22.0.linux-amd64.tar.gz
 
 # Instalar JQ (1.7)
 sudo apt remove jq -y
